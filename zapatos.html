@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapatos | Obsidian Blackout</title>
+    <!-- Vinculación directa al archivo CSS general -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main class="catalog-container">
+        <a href="index.html" class="back-link">← Volver al Inicio</a>
+        <h1 class="catalog-title">Catálogo de Calzado Táctico y Urbano</h1>
+
+        <!-- Grilla con los 6 zapatos -->
+        <div class="products-grid">
+
+            <!-- Zapato 1 -->
+            <article class="product-card" data-id="17">
+                <img src="./assets/img/zapato1.jpeg" alt="Botas tácticas de combate color negro con suela antideslizante" loading="lazy">
+                <h3>Botas Combat Black</h3>
+                <p class="product-price">$240.000 COP</p>
+                <p class="product-stock" data-id="17">Cargando stock...</p>
+                <a href="#" class="btn-buy">Ver Detalle</a>
+            </article>
+
+            <!-- Zapato 2 -->
+            <article class="product-card" data-id="18">
+                <img src="./assets/img/zapato2.jpeg" alt="Tenis urbanos de diseño militar verde oliva con refuerzo en talón" loading="lazy">
+                <h3>Tenis Urban Tactical</h3>
+                <p class="product-price">$195.000 COP</p>
+                <p class="product-stock" data-id="18">Cargando stock...</p>
+                <a href="#" class="btn-buy">Ver Detalle</a>
+            </article>
+
+            <!-- Zapato 3 -->
+            <article class="product-card" data-id="19">
+                <img src="./assets/img/zapato3.jpeg" alt="Botines de cuero camuflados resistentes al agua" loading="lazy">
+                <h3>Botines Stealth Camo</h3>
+                <p class="product-price">$260.000 COP</p>
+                <p class="product-stock" data-id="19">Cargando stock...</p>
+                <a href="#" class="btn-buy">Ver Detalle</a>
+            </article>
+
+            <!-- Zapato 4 -->
+            <article class="product-card" data-id="20">
+                <img src="./assets/img/zapato4.jpeg" alt="Botas de montaña estilo desierto color coyote con punta reforzada" loading="lazy">
+                <h3>Botas Desert Recon</h3>
+                <p class="product-price">$250.000 COP</p>
+                <p class="product-stock" data-id="20">Cargando stock...</p>
+                <a href="#" class="btn-buy">Ver Detalle</a>
+            </article>
+
+            <!-- Zapato 5 -->
+            <article class="product-card" data-id="21">
+                <img src="./assets/img/zapato5.jpeg" alt="Tenis de plataforma negra estilo urbano futurista" loading="lazy">
+                <h3>Tenis Obsidian Runner</h3>
+                <p class="product-price">$210.000 COP</p>
+                <p class="product-stock" data-id="21">Cargando stock...</p>
+                <a href="#" class="btn-buy">Ver Detalle</a>
+            </article>
+
+            <!-- Zapato 6 -->
+            <article class="product-card" data-id="22">
+                <img src="./assets/img/zapato6.jpeg" alt="Botas tácticas de caña alta con cremallera lateral de acceso rápido" loading="lazy">
+                <h3>Botas Zip Fast Ops</h3>
+                <p class="product-price">$280.000 COP</p>
+                <p class="product-stock" data-id="22">Cargando stock...</p>
+                <a href="#" class="btn-buy">Ver Detalle</a>
+            </article>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,292 @@
+/* Variables de color */
+:root {
+    --bg-color: #0d0d0d;
+    --card-bg: #171717;
+    --accent-color: #4a5d4e; 
+    --accent-hover: #5c7461;
+    --text-color: #e5e5e5;
+    --text-muted: #a3a3a3;
+    --border-color: #262626;
+}
+
+/* Configuración global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header con imagen completa de fondo (Hero Banner) */
+.hero-header {
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+    background-image: url('./assets/img/Logo.jpeg');
+    background-size: contain;     /* Muestra la imagen COMPLETA sin recortar */
+    background-position: center;  /* Centrada horizontal y verticalmente */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-color: #000000;    /* Rellena los bordes vacíos con negro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Capa semitransparente para oscurecer el fondo */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65); /* Controla la opacidad del fondo */
+    z-index: 1;
+}
+
+/* Contenido superpuesto */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 1.5rem 1rem;
+    max-width: 800px;
+    width: 100%;
+}
+
+.hero-content h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+    margin-bottom: 1rem;
+}
+
+/* Navegación y botones superpuestos */
+nav h3 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #dddddd;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.category-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.category-list a {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: rgba(15, 15, 15, 0.85);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    font-weight: 600;
+    font-size: 0.9rem;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+.category-list a:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Secciones de contenido */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.content-box {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border-color);
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+p {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+/* Pie de página */
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+/* ==========================================
+   CATÁLOGO DE CAMISETAS Y PRODUCTOS
+   ========================================== */
+
+/* Contenedor principal de la página del catálogo */
+.catalog-container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.catalog-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Enlace para regresar al inicio */
+.back-link {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: #ffffff;
+}
+
+/* Grilla adaptable de 3 columnas */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Recuadro gris de cada producto */
+.product-card {
+    background-color: #262626; /* Fondo gris */
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Efecto Hover: se agranda al pasar el mouse */
+.product-card:hover {
+    transform: scale(1.05); /* Incrementa un 5% el tamaño */
+    background-color: #333333; /* Gris más claro */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-color: #ffffff;
+}
+
+/* Imagen del producto */
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    background-color: #171717; /* Fondo gris oscuro si la imagen falla */
+}
+
+/* Nombre del producto */
+.product-card h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Precio del producto */
+.product-price {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Botón de ver detalle / comprar */
+.btn-buy {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid #444444;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-buy:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.product-stock {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-stock.stock-bajo {
+    color: #d4a24c;
+}
+
+.product-stock.agotado {
+    color: #b3524c;
+    font-weight: 700;
+}
+
+.btn-buy.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+    cursor: not-allowed;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camisetas | Obsidian Blackout</title>
+    <!-- Vinculación al archivo CSS general -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main class="catalog-container">
+        <a href="index.html" class="back-link">← Volver al Inicio</a>
+        <h1 class="catalog-title">Catálogo de Camisetas</h1>
+
+        <!-- Grilla con las 9 camisetas -->
+        <div class="products-grid">
+
+            <!-- Camiseta 1 -->
+            <article class="product-card" data-id="1">
+                <img src="assets/img/camiseta1.jpeg" alt="Camiseta táctica oversize negra resistente al desgaste" loading="lazy">
+                <h3>Camiseta Táctica Black</h3>
+                <p class="product-price">$85.000 COP</p>
+                <p class="product-stock" data-id="1">Cargando stock...</p>
+                <a href="#" class="btn-buy">Ver Detalle</a>
+            </article>
+
+            <!-- Camiseta 2 -->
+            <article class="product-card" data-id="2">
+                <img src="assets/img/camiseta2.jpeg" alt="Camiseta estilo urbano corte militar verde oliva" loading="lazy">
+                <h3>Camiseta Urban Olive</h3>
+                <p class="product-price">$90.000 COP</p>
+                <p class="product-stock" data-id="2">Cargando stock...</p>
+                <a href="#" class="btn-buy">Ver Detalle</a>
+            </article>
+
+            <!-- Camiseta 3 -->
+            <article class="product-card" data-id="3">
+                <img src="assets/img/camiseta3.jpeg" alt="Camiseta camuflada oscura de secado rápido" loading="lazy">
+                <h3>Camiseta Camo Stealth</h3>
+                <p class="product-price">$95.000 COP</p>
+                <p class="product-stock" data-id="3">Cargando stock...</p>
+                <a href="#" class="btn-buy">Ver Detalle</a>
+            </article>
+
+            <!-- Camiseta 4 -->
+            <article class="product-card" data-id="4">
+                <img src="assets/img/camiseta4.jpeg" alt="Camiseta manga larga negra con parches de alta durabilidad" loading="lazy">
+                <h3>Camiseta Manga Larga Ops</h3>
+                <p class="product-price">$110.000 COP</p>
+                <p class="product-stock" data-id="4">Cargando stock...</p>
+                <a href="#" class="btn-buy">Ver Detalle</a>
+            </article>
+
+            <!-- Camiseta 5 -->
+            <article class="product-card" data-id="5">
+                <img src="assets/img/camiseta5.jpeg" alt="Camiseta gris grafito con estampado minimalista Obsidian" loading="lazy">
+                <h3>Camiseta Obsidian Heavy</h3>
+                <p class="product-price">$88.000 COP</p>
+                <p class="product-stock" data-id="5">Cargando stock...</p>
+                <a href="#" class="btn-buy">Ver Detalle</a>
+            </article>
+
+            <!-- Camiseta 6 -->
+            <article class="product-card" data-id="6">
+                <img src="assets/img/camiseta6.jpeg" alt="Camiseta deportiva táctica transpirable color coyote" loading="lazy">
+                <h3>Camiseta Desert Tactical</h3>
+                <p class="product-price">$92.000 COP</p>
+                <p class="product-stock" data-id="6">Cargando stock...</p>
+                <a href="#" class="btn-buy">Ver Detalle</a>
+            </article>
+
+            <!-- Camiseta 7 -->
+            <article class="product-card" data-id="7">
+                <img src="assets/img/camiseta7.jpeg" alt="Camiseta cuello redondo negra con bolsillo frontal reforzado" loading="lazy">
+                <h3>Camiseta Cargo Pocket</h3>
+                <p class="product-price">$98.000 COP</p>
+                <p class="product-stock" data-id="7">Cargando stock...</p>
+                <a href="#" class="btn-buy">Ver Detalle</a>
+            </article>
+
+            <!-- Camiseta 8 -->
+            <article class="product-card" data-id="8">
+                <img src="assets/img/camiseta8.jpeg" alt="Camiseta estilo militar estructurada color arena" loading="lazy">
+                <h3>Camiseta Squad Recon</h3>
+                <p class="product-price">$85.000 COP</p>
+                <p class="product-stock" data-id="8">Cargando stock...</p>
+                <a href="#" class="btn-buy">Ver Detalle</a>
+            </article>
+
+            <!-- Camiseta 9 -->
+            <article class="product-card" data-id="9">
+                <img src="assets/img/camiseta9.jpeg" alt="Camiseta negra premium de algodón pesado edición limitada" loading="lazy">
+                <h3>Camiseta Blackout Edition</h3>
+                <p class="product-price">$120.000 COP</p>
+                <p class="product-stock" data-id="9">Cargando stock...</p>
+                <a href="#" class="btn-buy">Ver Detalle</a>
+            </article>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
