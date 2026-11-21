@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#171717"/>
+  <rect x="24" y="24" width="552" height="552" fill="none" stroke="#4a5d4e" stroke-width="3" stroke-dasharray="14 10"/>
+  <text x="300" y="285" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700" fill="#e5e5e5" letter-spacing="4">OBSIDIAN</text>
+  <text x="300" y="335" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700" fill="#4a5d4e" letter-spacing="4">BLACKOUT</text>
+  <text x="300" y="400" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#a3a3a3">Imagen no disponible</text>
+</svg>
